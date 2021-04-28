@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1067</width>
-    <height>532</height>
+    <height>684</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -306,19 +306,12 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QSlider" name="horizontalSliderZTela">
-                   <property name="enabled">
-                    <bool>true</bool>
-                   </property>
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                  </widget>
+                  <widget class="QLCDNumber" name="lcdNumber"/>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber">
-                   <property name="enabled">
-                    <bool>true</bool>
+                  <widget class="QSlider" name="horizontalSliderZTela">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
                    </property>
                   </widget>
                  </item>
@@ -339,8 +332,8 @@
    <widget class="Plotter" name="plotter" native="true">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>-20</y>
+      <x>409</x>
+      <y>9</y>
       <width>321</width>
       <height>471</height>
      </rect>
@@ -380,17 +373,17 @@
  <connections>
   <connection>
    <sender>horizontalSliderZTela</sender>
-   <signal>valueChanged(int)</signal>
+   <signal>sliderMoved(int)</signal>
    <receiver>lcdNumber</receiver>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>343</x>
-     <y>583</y>
+     <x>523</x>
+     <y>106</y>
     </hint>
     <hint type="destinationlabel">
-     <x>312</x>
-     <y>613</y>
+     <x>524</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
