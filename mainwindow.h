@@ -15,7 +15,8 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-private slots:
+
+public slots:
     void on_btnTamanhoDaMtariz_clicked();
     void on_btnPutBox_clicked();
     void on_btnCutBox_clicked();
@@ -28,6 +29,8 @@ private slots:
     void on_radioButtonBox_clicked();
     void on_radioButtonPut_clicked();
     void on_horizontalSliderZTela_valueChanged();
+    void sair();
+
 
 private:
     int matrizX,matrizY,matrizZ;

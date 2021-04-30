@@ -157,3 +157,6 @@ void MainWindow::on_horizontalSliderZTela_valueChanged()
 {
     ui->plotter->setZAtual(ui->horizontalSliderZTela->value());
 }
+void MainWindow::sair(){
+    exit(0);
+}

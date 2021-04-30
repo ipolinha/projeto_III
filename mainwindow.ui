@@ -361,8 +361,17 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionsair"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionsair">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>sair</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
@@ -376,18 +385,18 @@
  <resources/>
  <connections>
   <connection>
-   <sender>horizontalSliderZTela</sender>
-   <signal>sliderMoved(int)</signal>
-   <receiver>lcdNumber</receiver>
-   <slot>display(int)</slot>
+   <sender>actionsair</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>523</x>
-     <y>106</y>
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>524</x>
-     <y>76</y>
+     <x>533</x>
+     <y>341</y>
     </hint>
    </hints>
   </connection>
