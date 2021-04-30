@@ -54,7 +54,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="tamanhoDaMatrizX"/>
+              <widget class="QLineEdit" name="tamanhoDaMatrizX">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
              </item>
              <item>
               <widget class="QLabel" name="label_3">
@@ -332,10 +336,10 @@
    <widget class="Plotter" name="plotter" native="true">
     <property name="geometry">
      <rect>
-      <x>409</x>
+      <x>399</x>
       <y>9</y>
-      <width>321</width>
-      <height>471</height>
+      <width>331</width>
+      <height>571</height>
      </rect>
     </property>
    </widget>

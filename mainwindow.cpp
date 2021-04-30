@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->mudaCorB->QLineEdit::setValidator( new QIntValidator(0, 400, this));
     ui->mudaCorA->QLineEdit::setValidator( new QIntValidator(0, 400, this));
 
-   ui->horizontalSliderZTela->QSlider::setMaximum(0);
+   ui->horizontalSliderZTela->QSlider::setMaximum(400);
 
 
 }
